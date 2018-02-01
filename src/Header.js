@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexboxgrid';
-import './dashboard.css';
-import Menu from "./Menu";
+import './header.css';
+import MenuList from "./Menu";
 
-class Dashboard extends Component {
+class Header extends Component {
     render() {
         return (
-            <section className="dashboard">
+            <header className="header">
                 <Grid className="container-fluid">
                     <Row className="row middle-xs">
-                        <span className="address-box">{this.props.addr}</span>
+                        <MenuList/>
                     </Row>
                 </Grid>
-            </section>
-
-        );
+            </header>
+    );
     }
 }
 
-export default Dashboard;
+export default Header;

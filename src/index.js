@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Dashboard from './Dashboard';
+import App from './App';
 
 
 ReactDOM.render(
     <div>
-        <Dashboard address={'add'}/>
+        <App/>
     </div>,
-
     document.getElementById('root')
 );

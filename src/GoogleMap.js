@@ -58,11 +58,13 @@ class GoogleMap extends Component {
     }
 
     getGeocode(lat, lng) {
-        axios.get('https://maps.googleapis.com/maps/api/geocode/json?address='+ lat +','+ lng +'&key=AIzaSyBHgisLm4KhjpcPN6JYIrRTFocFf6kPNaA') // be sure your api key is correct and has access to the geocode api
+        axios.get('https://maps.googleapis.com/maps/api/geocode/json?address='+ lat +','+ lng +'&language=en&key=AIzaSyBHgisLm4KhjpcPN6JYIrRTFocFf6kPNaA') // be sure your api key is correct and has access to the geocode api
             .then(response => {
                 //console.log(response);
+                var resp = response.data.results[0];
+                var addr = resp.address_components[0].long_name + ' ' + resp.address_components[1].long_name + ', ' + resp.address_components[3].long_name + ' ' + resp.address_components[7].long_name;
                 this.setState({
-                    address: response.data.results[0].formatted_address // access from response.data.results[0].formatted_address
+                    address: addr // access from response.data.results[0].formatted_address
                 });
                 this.handleSentAddress(this.state.address);
             }).catch((error) => { // catch is called after then
