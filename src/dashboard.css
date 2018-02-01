@@ -1,0 +1,42 @@
+.header {
+    background-color: #fff;
+}
+
+.header .brand {
+    margin-right: 60px;
+    text-decoration: none;
+    color: #fb5677;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header .navbar {
+    flex-grow: 1;
+}
+
+.navbar-menu {
+    display: flex;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-item {
+    padding: 25px 20px;
+}
+
+.menu-item > a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navbar-menu--left {
+    float: right !important;
+}
+
+.navbar-menu--left .menu-item {
+    padding: 25px 0;
+}

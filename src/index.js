@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import GoogleMap from './GoogleMap';
+import Dashboard from './Dashboard';
 
 
 ReactDOM.render(
-    <GoogleMap />,
-    document.getElementById('map')
+    <div>
+        <Dashboard address={'add'}/>
+    </div>,
+
+    document.getElementById('root')
 );

@@ -14,7 +14,7 @@ class GoogleMap extends Component {
             activeMarker: {},
             selectedPlace: {},
             currentPosition: {lat: null, lng: null},
-            address: '1'
+            address: ''
         };
 
 
@@ -63,9 +63,14 @@ class GoogleMap extends Component {
                 //console.log(response);
                 this.setState({
                     address: response.data.results[0].formatted_address // access from response.data.results[0].formatted_address
-                })
+                });
+                this.handleSentAddress(this.state.address);
             }).catch((error) => { // catch is called after then
         });
+    }
+
+    handleSentAddress = (address) => {
+        this.props.getAddress(address);
     }
 
     componentWillMount() {
