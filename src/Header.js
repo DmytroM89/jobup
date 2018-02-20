@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexboxgrid';
 import './header.css';
-import MenuList from "./Menu";
+import Nav from "./Nav";
 
 class Header extends Component {
     render() {
@@ -9,7 +9,7 @@ class Header extends Component {
             <header className="header">
                 <Grid className="container-fluid">
                     <Row className="row middle-xs">
-                        <MenuList/>
+                        <Nav/>
                     </Row>
                 </Grid>
             </header>

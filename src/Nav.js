@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexboxgrid';
-import './menu.css';
+import './nav.css';
 
-class Menu extends Component {
+class Nav extends Component {
     render() {
         return (
             <div className="navbar">
@@ -25,4 +25,4 @@ class Menu extends Component {
     }
 }
 
-export default Menu;
+export default Nav;

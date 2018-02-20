@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexboxgrid';
 import './dashboard.css';
-import Menu from "./Menu";
+import Taskcreator from './Taskcreator'
+import Taskboard from './Taskboard'
 
 class Dashboard extends Component {
     render() {
@@ -11,9 +12,11 @@ class Dashboard extends Component {
                     <Row className="row middle-xs">
                         <span className="address-box">{this.props.addr}</span>
                     </Row>
+                    <Taskboard/>
+                    <Taskcreator/>
                 </Grid>
-            </section>
 
+            </section>
         );
     }
 }
