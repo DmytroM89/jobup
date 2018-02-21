@@ -8,14 +8,10 @@ class Dashboard extends Component {
     render() {
         return (
             <section className="dashboard">
-                <Grid className="container-fluid">
-                    <Row className="row middle-xs">
-                        <span className="address-box">{this.props.addr}</span>
-                    </Row>
+                <div className="container-fluid">
                     <Taskboard/>
-                    <Taskcreator/>
-                </Grid>
-
+                    <Taskcreator address={this.props.addr}/>
+                </div>
             </section>
         );
     }

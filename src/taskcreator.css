@@ -1,0 +1,43 @@
+.task-creator {
+    display: block;
+    width: 500px;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.task-creator-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 25px;
+}
+
+.task-creator-item p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #b8b8b8;
+}
+
+.new-task {
+    background-color: #f4f4f4;
+}
+
+.icon {
+    display: flex;
+    border: 1px solid;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.description textarea {
+    width: 100%;
+}
