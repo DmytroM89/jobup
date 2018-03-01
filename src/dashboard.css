@@ -1,9 +1,8 @@
 .dashboard {
     width: 100%;
     position: fixed;
-    top: 71px;
+    top: 56px;
     z-index: 2;
-    padding-top: 15px;
 }
 
 .address-box {

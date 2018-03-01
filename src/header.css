@@ -1,6 +1,28 @@
-.header {
-    background-color: #fff;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
+.navbar {
+    background-color: #fff;    
+}
+
+.nav-item {
+    margin-left: 25px;
+}
+
+.active > .nav-link::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #000;
+    top: -16px;
+    left: 0;
+    right: 0;
+}
+
+.nav-link {
+    padding: 0 !important;
+    position: relative;
+}
+
+.logo {
+    color: #fb5677 !important;
+    margin-right: 4rem !important;
 }

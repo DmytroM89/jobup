@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "axios": "^0.17.1",
+    "firebase": "^4.10.1",
     "flexboxgrid": "^6.3.1",
     "google-maps-react": "^1.1.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-flexboxgrid": "^1.0.1",
@@ -16,5 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "jquery": "^3.3.1"
   }
 }

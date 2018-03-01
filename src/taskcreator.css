@@ -4,10 +4,20 @@
     height: 100vh;
     background-color: #fff;
     position: absolute;
-    right: 0;
+    right: -500px;
     top: 0;
     font-size: 14px;
     font-weight: 400;
+    transition: all 0.4s;
+}
+
+.task-creator.task-creator-active {
+    right: 0;
+    transition: all 0.4s;
+}
+
+.task-desc {
+    font-size: 18px;
 }
 
 .task-creator-item {
@@ -30,14 +40,43 @@
     background-color: #f4f4f4;
 }
 
-.icon {
-    display: flex;
-    border: 1px solid;
-    border-radius: 50px;
+.icon-img {
     width: 70px;
     height: 70px;
 }
 
+.icon-img-active {
+    border: 1px solid #4c70fe;
+    border-radius: 50px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
 .description textarea {
     width: 100%;
+}
+
+.hide {
+    height: 0;
+    display: none;
+}
+
+.show {
+    display: block;
+    height: auto;
+}
+
+.service-name, .task-name, .desc-text {
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.task:hover {
+    cursor: pointer;
+}
+.task-active {
+    border: 1px solid #4c70fe;
+    border-radius: 50px;
 }

@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
+import 'popper.js';
+import 'bootstrap';
 import Header from './Header';
 import GoogleMap from './GoogleMap';
 import Dashboard from './Dashboard';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
 class App extends Component {
